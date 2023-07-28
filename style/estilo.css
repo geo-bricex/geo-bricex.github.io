@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-jul-2020, 15:39:16
+    Author     : Usuario
+*/
+* {
+    font-family:"Times New Roman", Times, serif;
+    font-size:20px;
+}
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: "arial black", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(125deg,#70e1f5cc,#ffd194cc);
+}
+.container{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-15%);
+    color: #343434
+}
+.container h1{
+    font-size:180px;
+    font-family: "arial black", sans-serif;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+    background: #0c2461;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container a{
+    text-decoration: none;
+    background: #eb2f06aa;
+    color:#fff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+.container a:hover{
+    background: #eb2f06;
+}

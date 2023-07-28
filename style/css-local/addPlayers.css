@@ -1,0 +1,58 @@
+.form-group {
+    margin-bottom: 10px;
+}
+
+#add {
+    margin-top: 10px;
+    background-color: black;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#add:hover {
+    background-color: #555;
+    color: white;
+}
+#add.bold-text {
+    font-weight: bold;
+}
+.table-div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.table-player {
+    max-height: 250px;
+    overflow: auto;
+}
+
+.table-player th {
+    color: white;
+}
+
+ .custom-button {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+    }
+
+    .custom-button:hover {
+      background-color: #c9302c;
+      border-color: #ac2925;
+    }

@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/02/2021, 12:49:07
+    Author     : geova
+*/
+
+
+span,strong,td,h1,h2,h3,h4,h5,h6{cursor: default;}
+span,strong,td,h1,h2,h3,h4,h5,h6,a,img,label,div{
+    -webkit-touch-callout: none !important; /* iOS Safari */
+    -webkit-user-select: none !important; /* Safari */
+    -khtml-user-select: none !important; /* ; Konqueror HTML */
+    -moz-user-select: none !important; /* Old versions of Firefox */
+    -ms-user-select: none !important; /* Internet Explorer/Edge */
+    user-select: none !important; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+a{cursor: pointer;}
+a span{cursor: pointer;}
+.titleMenu span{cursor: pointer;}
+

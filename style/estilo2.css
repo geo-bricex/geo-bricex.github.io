@@ -1,0 +1,41 @@
+* {
+    font-family:"Times New Roman", Times, serif;
+    font-size:20px;
+}
+.container{
+     background: white;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-15%);
+    color: #343434;
+    
+}
+.container h1{
+    font-size:180px;
+    font-family: "arial black", sans-serif;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+    background: #eb2f06;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.container a{
+    text-decoration: none;
+    background: #870000aa;
+    color:#fff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+.container a:hover{
+    background: #870000;
+    
+}
+

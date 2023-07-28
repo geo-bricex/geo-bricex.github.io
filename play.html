@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Geovanny Brito">
+        <!--stylesheet-->
+        <link href="Image/favicon2.ico" rel="shortcut icon" sizes="32x32" >
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+        <link href="style/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="style/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+        <link href="style/estiloBW.css" rel="stylesheet"  />
+        <link href="style/webSocketcss.css" rel="stylesheet" type="text/css"/>       
+        <link href="style/styles.css" rel="stylesheet" type="text/css">
+        <link href="style/estilo3.css" rel="stylesheet" type="text/css"/>
+        <link href="ico/font/flaticon.css" rel="stylesheet" type="text/css"/>
+        <link href="style/cargando.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/css-play.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/global.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/btnPlay.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/roulette.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/addPlayers.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/challenge.css" rel="stylesheet" type="text/css"/>
+        <!--scripts-->
+        <script src="js/js-library/jquery.min.js" type="text/javascript"></script>
+        <script src="js/js-library/angular.js" type="text/javascript"></script>
+        <script src="js/js-library/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/js-library/sweetalert2.min.js" type="text/javascript"></script>
+        <script src="js/js-library/all-plugins.js" type="text/javascript"></script>
+        <script src="js/js-library/console.image.js" type="text/javascript"></script>
+        <script src="js/js-library/angular-route.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/92f6e27e1c.js" crossorigin="anonymous"></script>
+        <title>Inicio</title>
+
+    </head>
+
+    <body id="page-top" ng-controller="controllerJugar">
+        <div id="contenedor_carga">
+            <div id="carga">
+
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="logo">
+            <i class="fa fa-bomb" aria-hidden="true">
+                <!--                <span style="color: white;">Crazy Group</span>-->
+            </i>                
+        </div>
+
+        <!-- Header Starts -->
+        <section id="Banner" class="content-section">
+            <div class="container content-wrap text-center">
+                <div id="banner-contend">
+                    <div id="level-div" class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <h3> Nivel de juego</h3>
+                        </div>    
+                        <div class="col-sm-3 col-sm-6">
+                            <div class="form-group">
+                                <select class="form-control" id="catero">
+                                    <option value="Grupo">Grupo</option>
+                                    <option value="Pareja">Pareja</option>
+                                    <option value="Todo se vale">Todo se vale</option>
+                                </select>
+                            </div>
+                        </div>   
+                    </div>
+                    <br/>
+                    <div id="table-div" class="container">
+                        <div class="text-center">
+                            <h3>Agregar Jugador</h3>
+                        </div>    
+                        <div class="col-sm-12 col-md-6 m-auto">
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="name" placeholder="Alias">
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="sex">
+                                    <option value="No Importa">No Importa</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+                            <input style="color: black"
+                                   class="form-control btn btn-primary bold-text" 
+                                   type="button" 
+                                   id="add" value="AÑADIR">
+
+                            <div class="mt-3 table-player">
+                                <table id="table_player" class="table table-bordered mb-0">
+                                    <tr style="background-color: #333;">
+                                        <th style="color: white;">Alias</th>
+                                        <th style="color: white;">Género</th>
+                                        <th style="color: white;">Acción</th>
+                                    </tr>
+                                </table>
+                            </div>   
+                        </div>  
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+
+                        </div>    
+
+                        <div class="col-sm-3 col-sm-6">
+                            <a class="btn btn-warning btn smooth-scroll">
+                                <strong style="color: black;" ng-click="backReturn()">REGRESAR</strong>
+                            </a> 
+                            <a class="btn btn-success btn smooth-scroll" ng-click="playgame()">
+                                <strong style="color: black;">¡EMPEZAR!</strong>
+                            </a>                         
+                        </div>   
+                    </div>
+                </div>
+
+                <div id="banner-contend-roulette">
+                    <div class="container">
+                        <div >
+                            <canvas class="canvasres" id="canvas" width="500" height="500"></canvas>
+                        </div>
+                        <div>
+                            <input type="button" value="GIRAR" style="color: black; float:left;" class="form-control alert-success" id='spin' />
+                            <input type="button" value="REGRESAR" style="color: black; float:left;" ng-click="backMode();" class="form-control alert-warning mt-4" id='return' />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div id="banner-contend-play">
+
+                        <label id="lblparticipant" style="font-size: 50px;"> </label>
+                        <br/>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 col-md-4">
+                                <button class="boton_V" ng-click="startGame('verdad')"><strong>VERDAD</strong></button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button class="boton_R" ng-click="startGame('reto')"><strong>DESAFÍO</strong></button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button class="boton_A" ng-click="startGame('comodin')"><strong>CÓMODIN</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="banner-contend-challenge">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div style="max-height: 400px; overflow: auto;">
+                                    <label id="lblChallenge">
+
+                                    </label>
+                                </div>
+                                <br/>
+                            </div>
+                            <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                                <br/>                                
+                                <button class="btn btn-success btn-lg btn-continuar" ng-click="playgame()"><strong>¡CONTINUAR!</strong></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/propios/util.js" type="text/javascript"></script>
+        <script src="js/propios/js-propio.js" type="text/javascript"></script>
+        <script src="js/angular/app.js" type="text/javascript"></script>
+        <script src="js/angular/JugarController.js" type="text/javascript"></script>
+        <script src="js/propios/js-ruleta.js" type="text/javascript"></script>
+    </body>
+</html>

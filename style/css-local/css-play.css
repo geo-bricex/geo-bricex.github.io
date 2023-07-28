@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-abr-2022, 16:49:30
+    Author     : geova
+*/
+
+.number-wrapper {
+    position: relative;
+}
+
+.number-wrapper:after,
+.number-wrapper:before {
+    position: absolute;
+    right: 5px;
+    width: 1.6em;
+    height: .9em;
+    font-size: 10px;
+    pointer-events: none;
+    background: #fff;
+}
+
+.number-wrapper:after {
+    color: blue;
+    content: "\25B2";
+    margin-top: 1px;
+}
+
+.number-wrapper:before {
+    color: red;
+    content: "\25BC";
+    margin-bottom: 5px;
+    bottom: -.5em;
+}
+
+.boton_V{
+    text-decoration: none;
+    padding: 100px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 1000px;
+    font-size: 35px;
+    color: black;
+    background-color: #3EFF00;
+}
+.boton_V:hover{
+    color: white;
+    background-color: #165801;
+    text-decoration: none;
+}
+
+.boton_R{
+    text-decoration: none;
+    padding: 100px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 1000px;
+    font-size: 35px;
+    color: black;
+    background-color: #FF3131;
+}
+.boton_R:hover{
+    color: white;
+    background-color: #6C0000;
+    text-decoration: none;
+}
+
+.boton_A{
+    text-decoration: none;
+    padding: 100px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: 1000px;
+    font-size: 35px;
+    color: black;
+    background-color: #2a57fe;
+}
+.boton_A:hover{
+    color: white;
+    background-color: #001a7b;
+    text-decoration: none;
+}

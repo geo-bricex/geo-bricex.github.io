@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Geovanny Brito">
+        <!--stylesheet-->
+        <link href="Image/favicon2.ico" rel="shortcut icon" sizes="32x32" >
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+        <link href="style/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="style/custom-responsive-styles.css" rel="stylesheet" type="text/css">
+        <link href="style/estiloBW.css" rel="stylesheet"  />
+        <link href="style/webSocketcss.css" rel="stylesheet" type="text/css"/>       
+        <link href="style/styles.css" rel="stylesheet" type="text/css">
+        <link href="style/estilo3.css" rel="stylesheet" type="text/css"/>
+        <link href="ico/font/flaticon.css" rel="stylesheet" type="text/css"/>
+        <link href="style/cargando.css" rel="stylesheet" type="text/css"/>
+        <link href="style/css-local/global.css" rel="stylesheet" type="text/css"/>
+        <!--scripts-->
+        <script src="js/js-library/jquery.min.js" type="text/javascript"></script>
+        <script src="js/js-library/angular.js" type="text/javascript"></script>
+        <script src="js/js-library/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/js-library/sweetalert2.min.js" type="text/javascript"></script>
+        <script src="js/js-library/all-plugins.js" type="text/javascript"></script>
+        <script src="js/js-library/plugins-activate.js" type="text/javascript"></script>
+        <script src="js/js-library/plugins-activate.js" type="text/javascript"></script>
+        <script src="js/js-library/console.image.js" type="text/javascript"></script>
+        <script src="js/js-library/angular-route.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/92f6e27e1c.js" crossorigin="anonymous"></script>
+        <title>Inicio</title>
+    </head>
+
+    <body id="page-top" ng-controller="controllerInicio">
+        <div id="contenedor_carga">
+            <div id="carga">
+
+            </div>
+        </div>
+        <!-- Navigation -->
+        <div class="logo">
+            <i class="fa fa-bomb" aria-hidden="true"><span style="color: white;">Crazy Group</span></i>
+        </div>
+
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="smooth-scroll" href="#Header"></a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="smooth-scroll" href="#page-top">Inicio</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="" href="pages/login.html">Iniciar Sesión</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="smooth-scroll" href="#About">Acerca de</a>
+                </li>                        
+                <li class="sidebar-nav-item">
+                    <a class="smooth-scroll" href="#Contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Header Starts -->
+        <section id="Banner" class="content-section">
+            <div class="container content-wrap text-center">
+                <h1>Crazy Group</h1>
+                <h3>
+                    <em>¡Para LEGENDARIOS momentos con tus amigos!</em>
+                </h3>
+                <a class="btn btn-primary btn-xl smooth-scroll"   href="#Services"> <strong>¡JUGAR!</strong></a>
+            </div>
+            <div class="overlay"></div>
+        </section>
+        <!-- Header Ends -->
+        <section id="Services" class="content-section text-center">
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Lo que ofrecemos</h2>
+                    <p>Queremos brindarte buenos e inolvidables momentos con tu grupo de amigos, en esas fiestas que necesitan salir de lo convencional</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon divertido">
+                                <div class="front-content">
+                                    <i class="flaticon-online-shop" aria-hidden="true"></i>
+                                    <h2 class="subtitle">DIVERTIDO</h2>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3>  <strong>+8 años</strong></h3>
+                                <p>Diviertete con verdades y retos fuera de lo común.</p>
+                                <br/>
+                                <a class="btn btn-light btn smooth-scroll" ng-click="gotoplay('fun')">
+                                    <strong>¡COMENZAR!</strong>
+                                </a>                              
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-box ">
+                            <div class="service-icon extremo">
+                                <div class="front-content">
+                                    <i class="flaticon-teamwork" aria-hidden="true"></i>
+                                    <h2 class="subtitle">EXTREMO</h2>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3>+16 años</h3>
+                                <p>¿Te arriesgas?.</p>
+                                <br/>
+                                <a class="btn btn-light btn smooth-scroll" ng-click="gotoplay('extreme')" >
+                                    <strong >¡COMENZAR!</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-box ">
+                            <div class="service-icon erotico">
+                                <div class="front-content">
+                                    <i class="flaticon-teamwork" aria-hidden="true"></i>
+                                    <h2 class="subtitle">ERÓTICO</h2>                                   
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3>+18 años</h3>
+                                <p>Perfecto para jugar en pareja, o bueno para conseguirla.</p>
+                                <br/>
+                                <a class="btn btn-light btn smooth-scroll" ng-click="gotoplay('erotic')" >
+                                    <strong >¡COMENZAR!</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-box">
+                            <div class="service-icon full">
+                                <div class="front-content">
+                                    <i class="flaticon-online-shopping-1"  aria-hidden="true" ></i>
+                                    <h2 class="subtitle">FULL</h2>
+                                </div>
+                            </div>
+                            <div class="service-content">
+                                <h3>  <strong>+18 años</strong></h3>
+                                <p>¡TODAS las categorías en este Nivel!</p>
+                                <br/>
+                                <a class="btn btn-light btn smooth-scroll" ng-click="gotoplay('full')" ng-app="">
+                                    <strong >¡COMENZAR!</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Starts -->
+        <section id="About" class="content-section">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="block-heading">
+                            <h2>Acerca de</h2>
+                        </div>
+                        <p class="lead">Está aplicación tiene la finalidad de incentivar la recreación entre un grupo de amigos, forjar y reforzar la amistad. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Starts -->
+        <!-- FRASE CÉLEBRES -->
+        <section id="Testimonials" class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="block-heading">
+                            <h2>Frases</h2>
+                            <p>¡Inspiremonos un poco!</p>
+                        </div>
+                        <div id="customers-testimonials" class="owl-carousel">
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <img class="img-circle" src="" alt="">
+                                    <p>No hay que ir para atrás ni para darse impulso</p>
+                                </div>
+                                <div class="testimonial-name">Lao Tsé</div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <p>No hay caminos para la paz; la paz es el camino</p>
+                                </div>
+                                <div class="testimonial-name">Mahatma Gandhi</div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <p>Arrecho nunca muere, y si muere.... !Muere ARRECHO¡</p>
+                                </div>
+                                <div class="testimonial-name">Geovanny Brito Casanova</div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <p>Haz el amor y no la guerra</p>
+                                </div>
+                                <div class="testimonial-name">John Lennon</div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <p>Para trabajar basta estar convencido de una cosa: que trabajar es menos aburrido que divertirse</p>
+                                </div>
+                                <div class="testimonial-name">Amy Tan</div>
+                            </div>
+                            <div class="item">
+                                <div class="shadow-effect">
+                                    <p>Lo peor que hacen los malos es obligarnos a dudar de los buenos</p>
+                                </div>
+                                <div class="testimonial-name">Jacinto Benavente</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF TESTIMONIALS -->
+        <div id="ContenedorBajo">
+        </div>
+
+        <!--        <label for="dark-mode" class="dark-mode-button" style=" text-decoration: none;
+                       padding: 2px;
+                       font-weight: 600;
+                       font-size: 12px;
+                       color: #ffffff;
+                       background-color: #1883ba;
+                       border: 2px solid #0016b0;">
+                    <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
+                    Modo Oscuro
+                </label>-->
+        <script>
+        </script>
+        <script src="js/propios/websocket.js" type="text/javascript"></script>
+        <script src="js/propios/util.js" type="text/javascript"></script>
+        <script src="js/angular/app.js" type="text/javascript"></script>
+        <script src="js/angular/InicioController.js" type="text/javascript"></script>
+    </body>
+</html>

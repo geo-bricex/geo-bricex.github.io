@@ -1,0 +1,31 @@
+#banner-contend-play {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.boton_V {
+    background-color: green;
+    color: white;
+}
+
+.boton_R {
+    background-color: red;
+    color: white;
+}
+
+.boton_A {
+    background-color: blue;
+    color: white;
+}
+
+.boton_V,
+.boton_R,
+.boton_A {
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
