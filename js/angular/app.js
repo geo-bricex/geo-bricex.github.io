@@ -6,7 +6,7 @@
 app = angular.module('app', ['ngRoute']);//inicializar aplicación angular
 //variable que obtiene la url del proyecto donde se obtiene los webservicies
 var dominionApis = "https://aplicaciones.uteq.edu.ec/"
-var urlWebServicies = dominionApis + "/crazygroup/webapis/";
+var urlWebServicies = dominionApis + "crazygroup/webapis/";
 //var urlWebServicies = dominionApis + "/CrazyGroup/webapis/";
 
 //app.directive('intense', function () {
