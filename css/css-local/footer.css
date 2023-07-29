@@ -1,0 +1,13 @@
+/* Estilos personalizados para los íconos de redes sociales */
+.social-icons a {
+    font-size: 24px; /* Tamaño de los íconos */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+.social-icons .linkedin-icon {
+    font-size: 30px; /* Tamaño del ícono de LinkedIn */
+}
+
+#sectionFooter{
+    background-color: #3b403d;
+}

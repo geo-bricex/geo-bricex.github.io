@@ -1,0 +1,82 @@
+/* Personalización de los botones */
+.btn-erotico {
+    background-color: #FF69B4; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    border: 2px solid #FF69B4; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.btn-erotico:hover {
+    background-color: #FF5A9D; /* Color de fondo al pasar el mouse */
+    border-color: #FF5A9D; /* Borde al pasar el mouse */
+}
+
+.btn-erotico:focus {
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Resaltar al enfocar el botón */
+}
+
+
+/* Personalización de los botones */
+.btn-full {
+    background-color: #4677bb; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    border: 2px solid #4677bb; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.btn-full:hover {
+    background-color: #1773c4; /* Color de fondo al pasar el mouse */
+    border-color: #1773c4; /* Borde al pasar el mouse */
+}
+
+.btn-full:focus {
+    box-shadow: 0 0 0 3px rgba(35, 95, 229, 0.5); /* Resaltar al enfocar el botón */
+}
+
+
+/* Personalización de los botones */
+.btn-extreme {
+    background-color: #ff4d80; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    border: 2px solid #ff4d80; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.btn-extreme:hover {
+    background-color: #b40431; /* Color de fondo al pasar el mouse */
+    border-color: #b40431; /* Borde al pasar el mouse */
+}
+
+.btn-extreme:focus {
+    box-shadow: 0 0 0 3px rgba(239, 26, 26, 0.5); /* Resaltar al enfocar el botón */
+}
+
+
+/* Personalización de los botones */
+.btn-fun {
+    background-color: #fcc72e; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 20px; /* Tamaño del texto */
+    border: 2px solid #fcc72e; /* Borde del botón */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.btn-fun:hover {
+    background-color: #d09a04; /* Color de fondo al pasar el mouse */
+    border-color: #d09a04; /* Borde al pasar el mouse */
+}
+
+.btn-fun:focus {
+    box-shadow: 0 0 0 3px rgba(255, 226, 27, 0.5); /* Resaltar al enfocar el botón */
+}
