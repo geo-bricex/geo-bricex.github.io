@@ -54,14 +54,14 @@ document.getElementById("add").onclick = function () {
                 ele_a.setAttribute("href", "javascript:void(0);");
                 ele_a.setAttribute("style", "color: black;");
                 ele_a.setAttribute("class", "custom-button");
-                
+
                 // Establecer el atributo onclick
                 ele_a.setAttribute("onclick", "del_tr(this);");
                 // Convertir eliminar en un nodo de texto
                 var del_node = document.createTextNode("Quitar");
                 // Realizar hipervínculo
                 ele_a.appendChild(del_node);
-                
+
                 // Crear nodo td
                 var td_del_node = document.createElement("td");
                 // Agregar eliminar hipervínculo

@@ -13,7 +13,7 @@ function obtenerFecha() {
     var sg = date.getSeconds();
     var msg = date.getMilliseconds();
 
-    return  y + '-' + m + '-' + d;
+    return y + '-' + m + '-' + d;
 }
 
 window.onload = function () {
@@ -25,16 +25,19 @@ window.onload = function () {
     });
 
 };
+
 function cargando() {
     var contenedor = document.getElementById('contenedor_carga');
     contenedor.style.visibility = 'visible';
     contenedor.style.opacity = '100';
 }
+
 function cargado() {
     var contenedor = document.getElementById('contenedor_carga');
     contenedor.style.visibility = 'hidden';
     contenedor.style.opacity = '0';
 }
+
 function regresar() {
     window.history.back();
 }

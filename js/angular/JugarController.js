@@ -272,7 +272,7 @@ app.controller('controllerJugar', function ($scope, $http) {// controller del in
                     ctx.shadowColor = "rgb(220,220,220)";
                     ctx.fillStyle = "black";
                     ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius,
-                            250 + Math.sin(angle + arc / 2) * textRadius);
+                        250 + Math.sin(angle + arc / 2) * textRadius);
                     ctx.rotate(angle + arc / 2 + Math.PI / 2);
                     var text = options[i];
                     ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
