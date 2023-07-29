@@ -124,7 +124,7 @@ app.controller('controllerJugar', function ($scope, $http) {// controller del in
             method: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: urlWebServicies + 'challengeapis/selectchallenge',
+            url: urlWebServicies + '/selectchallenge',
             data: JSON.stringify({...api_param}),
             beforeSend: (xhr) => {
                 document.querySelector('#lblChallenge').innerText = "";

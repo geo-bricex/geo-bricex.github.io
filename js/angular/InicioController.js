@@ -18,7 +18,7 @@ app.controller('controllerInicio', function ($scope, $http) {// controller del i
             "                    <div class=\"container\">\n" +
             "                        <div class=\"block-heading\">\n" +
             "                            <h2>Contactanos</h2>\n" +
-            "                            <p>Somos una empresa dedicada a la creación de aplicaciones Web, el objetivo de Shopping GDM es facilitar la búsqueda de grandes y pequeños negocios</p>\n" +
+            "                            <p>Somos una empresa dedicada a la creación de aplicaciones Web</p>\n" +
             "                        </div>\n" +
             "                        <div class=\"row\">\n" +
             "                            <div class=\"col-sm-12 col-md-6 col-lg-6\">\n" +
@@ -32,10 +32,10 @@ app.controller('controllerInicio', function ($scope, $http) {// controller del i
             "                                            <span class=\"c-icon\"><i class=\"fa fa-map-marker\" aria-hidden=\"true\"></i></span><span class=\"c-info\">&nbsp;Quevedo - Ecuador</span>\n" +
             "                                        </div>\n" +
             "                                        <div class=\"c-detail\">\n" +
-            "                                            <span class=\"c-icon\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i></span><span class=\"c-info\">+593 99 942 4267</span>\n" +
+            "                                            <span class=\"c-icon\"><i class=\"fa fa-phone\" aria-hidden=\"true\"></i></span><span class=\"c-info\">+593 98 394 4322</span>\n" +
             "                                        </div>\n" +
             "                                        <div class=\"c-detail\">\n" +
-            "                                            <span class=\"c-icon\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></span><span class=\"c-info\">geovanny.brito2017@uteq.edu.ec</span>\n" +
+            "                                            <span class=\"c-icon\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></span><span class=\"c-info\">geovannybricex@hotmail.com</span>\n" +
             "                                        </div>\n" +
             "                                    </div>\n" +
             "                                    <div class=\"address-block\">\n" +
