@@ -1,21 +1,21 @@
 /* Personalización de los botones */
-.btn-erotico {
-    background-color: #FF69B4; /* Color de fondo */
+.btn-extreme {
+    background-color: #00c555; /* Color de fondo */
     color: #fff; /* Color del texto */
     font-size: 20px; /* Tamaño del texto */
-    border: 2px solid #FF69B4; /* Borde del botón */
+    border: 2px solid #00c555; /* Borde del botón */
     border-radius: 10px; /* Bordes redondeados */
     padding: 10px 20px; /* Espaciado interno */
     text-decoration: none; /* Quitar subrayado de los enlaces */
 }
 
-.btn-erotico:hover {
-    background-color: #FF5A9D; /* Color de fondo al pasar el mouse */
-    border-color: #FF5A9D; /* Borde al pasar el mouse */
+.btn-extreme:hover {
+    background-color: #009342; /* Color de fondo al pasar el mouse */
+    border-color: #009342; /* Borde al pasar el mouse */
 }
 
-.btn-erotico:focus {
-    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5); /* Resaltar al enfocar el botón */
+.btn-extreme:focus {
+    box-shadow: 0 0 0 3px rgba(105, 255, 117, 0.5); /* Resaltar al enfocar el botón */
 }
 
 
@@ -36,12 +36,12 @@
 }
 
 .btn-full:focus {
-    box-shadow: 0 0 0 3px rgba(35, 95, 229, 0.5); /* Resaltar al enfocar el botón */
+    box-shadow: 0 0 0 3px rgba(17, 80, 224, 0.5); /* Resaltar al enfocar el botón */
 }
 
 
 /* Personalización de los botones */
-.btn-extreme {
+.btn-erotico {
     background-color: #ff4d80; /* Color de fondo */
     color: #fff; /* Color del texto */
     font-size: 20px; /* Tamaño del texto */
@@ -51,12 +51,12 @@
     text-decoration: none; /* Quitar subrayado de los enlaces */
 }
 
-.btn-extreme:hover {
-    background-color: #b40431; /* Color de fondo al pasar el mouse */
-    border-color: #b40431; /* Borde al pasar el mouse */
+.btn-erotico:hover {
+    background-color: rgba(180, 4, 49, 0.85); /* Color de fondo al pasar el mouse */
+    border-color: rgba(180, 4, 49, 0.85); /* Borde al pasar el mouse */
 }
 
-.btn-extreme:focus {
+.btn-erotico:focus {
     box-shadow: 0 0 0 3px rgba(239, 26, 26, 0.5); /* Resaltar al enfocar el botón */
 }
 
