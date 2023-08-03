@@ -114,7 +114,8 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
         let startGameData = {//mejorar para que no haga otra petición
             "category": paramUrl,
             "mode": "All",
-            "level": "1"
+            "level": "1",
+            "lang": "en",//head
         };
         apiStartGame(startGameData);
     };
@@ -124,9 +125,9 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
             method: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: urlWebServicies + '/selectchallenge_en',
+            url: urlWebServicies + '/selectchallenge',
             data: JSON.stringify({...api_param}),
-            headers: {"lang": "es"},
+            // headers: {"lang": "es"},
             beforeSend: (xhr) => {
                 document.querySelector('#lblChallenge').innerText = "";
             },
