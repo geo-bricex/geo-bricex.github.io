@@ -15,6 +15,8 @@
     margin-bottom: 5px;
     font-weight: bold; /* Añade negrita al texto */
     color: white; /* Color blanco del texto */
+    /* Agregar borde negro al texto */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .language-selector select {
