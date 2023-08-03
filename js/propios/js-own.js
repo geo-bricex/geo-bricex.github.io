@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 // Agrega un evento de clic al botón
 document.getElementById("add").onclick = function () {
     // Obtiene el valor del cuadro de entrada
@@ -19,16 +18,16 @@ document.getElementById("add").onclick = function () {
         participantes.push(alias[i * 3].innerHTML);
     }
     if (name_text.length > 2) {
-        if (participantes.includes(name_text) || name_text === "Todos") {
+        if (participantes.includes(name_text) || name_text === "All") {
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Parece que este participante ya se encuentra agregado'
+                text: 'It seems that this participant is already added'
             });
         } else {
             if (name_text.length > 0) {
                 document.getElementById("name").value = "";
-                document.getElementById("sex").value = "No Importa";
+                document.getElementById("sex").value = "Never mind";
                 // Para cargar el nombre en td, primero cree el nodo td
                 var td_name_node = document.createElement("td");
                 // El valor ingresado es texto, no un nodo. Si desea agregarlo a través de un nodo, debe convertirse en un nodo de texto
@@ -85,10 +84,11 @@ document.getElementById("add").onclick = function () {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Nombre muy corto'
+            text: 'Very short name'
         });
     }
 };
+
 
 del_tr = function (obj) {// Devuelto es el objeto de la etiqueta a
     // Eliminar nodos secundarios a través del nodo principal
