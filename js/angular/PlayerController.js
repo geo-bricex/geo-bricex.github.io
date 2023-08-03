@@ -185,13 +185,30 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
     }
 
     function textToSpeech(text) {
-        let utterance = new SpeechSynthesisUtterance(text);
-        for (let voice of synth.getVoices()) {
-            if (voice.name === "Microsoft Helena Desktop - Spanish (Spain)") {
-                utterance.voice = voice;
+        if ('speechSynthesis' in window) {
+            const utterance = new SpeechSynthesisUtterance();
+            utterance.text = text;
+
+            // Encuentra una voz en inglés
+            const englishVoice = getEnglishVoice();
+
+            if (englishVoice) {
+                // Establece la voz en inglés para el utterance
+                utterance.voice = englishVoice;
+
+                // Habla el texto en inglés
+                synth.speak(utterance);
+            } else {
+                console.log('Voz en inglés no encontrada.');
             }
+        } else {
+            console.log('El API de Web Speech no está soportado en este navegador.');
         }
-        synth.speak(utterance);
+    }
+
+    function getEnglishVoice() {
+        const englishVoices = speechSynthesis.getVoices().filter(voice => voice.lang.startsWith('en'));
+        return englishVoices.length > 0 ? englishVoices[0] : null;
     }
 
     $scope.backMode = function () {
