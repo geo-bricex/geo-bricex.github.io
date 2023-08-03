@@ -138,7 +138,7 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
 
                 var jsonChallenge = data.data;
                 var resultChallenge = jsonChallenge[0]; // jsonChallenge[Math.floor(Math.random() * jsonChallenge.length)];
-                var darinChallenge = resultChallenge.daring;
+                var darinChallenge = resultChallenge.daring_en;
                 var id_challenge = resultChallenge.id_challenge;
 
 
