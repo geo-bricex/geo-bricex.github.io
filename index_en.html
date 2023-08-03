@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="app">
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,7 @@
     <link href="css/css-local/css-index.css" rel="stylesheet" type="text/css"/>
     <link href="css/css-local/footer.css" rel="stylesheet" type="text/css"/>
     <link href="css/css-local/language.css" rel="stylesheet" type="text/css"/>
+
     <!--scripts-->
     <script src="js/js-library/jquery.min.js" type="text/javascript"></script>
     <script src="js/js-library/angular.js" type="text/javascript"></script>
@@ -36,17 +37,17 @@
             crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CG1KFEDCG7"></script>
-    <script src="js/google.js" ></script>
+    <script src="js/google.js"></script>
 
-    <title>CH - Inicio</title>
+    <title>CH - Home</title>
 </head>
 
-<body id="page-top" ng-controller="controllerInicio">
+<body id="page-top" ng-controller="controllerHome">
 <div class="language-selector">
-    <label for="language-select">Selecciona tu idioma:</label>
+    <label for="language-select">Select your language:</label>
     <select id="language-select" onchange="changeLanguage()">
-        <option value="es" selected>Español</option>
-        <option value="en">English</option>
+        <option value="en" selected>English</option>
+        <option value="es">Español</option>
     </select>
 </div>
 <div id="contenedor_carga">
@@ -67,18 +68,18 @@
             Hub
         </h1>
         <h3>
-            <em>¡Para LEGENDARIOS momentos!</em><br>
+            <em>¡For LEGENDARY moments!</em><br>
         </h3>
-        <a class="btn btn-primary btn-xl smooth-scroll" href="#Services"> <strong>¡JUGAR!</strong></a>
+        <a class="btn btn-primary btn-xl smooth-scroll" href="#Services"> <strong>¡PLAY!</strong></a>
     </div>
     <div class="overlay"></div>
 </section>
 <section id="Services" class="content-section text-center">
     <div class="container text-center">
         <div class="block-heading">
-            <h2>Lo que ofrecemos</h2>
-            <p>Queremos brindarte buenos e inolvidables momentos con tu grupo de amigos,
-                en esas fiestas que necesitan salir de lo convencional</p>
+            <h2>What we offer</h2>
+            <p>We want to give you good and unforgettable moments with your group of friends,
+                in those parties that need to get out of the conventional</p>
         </div>
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -86,15 +87,15 @@
                     <div class="service-icon divertido">
                         <div class="front-content">
                             <i class="flaticon-online-shop" aria-hidden="true"></i>
-                            <h2 class="subtitle">DIVERTIDO</h2>
+                            <h2 class="subtitle">FUN</h2>
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3><strong>+8 años</strong></h3>
-                        <p>Diviertete con verdades y retos fuera de lo común.</p>
+                        <h3><strong>+8 years</strong></h3>
+                        <p>Have fun with unusual truths and dares.</p>
                         <br/>
                         <a class="btn btn-fun btn-block smooth-scroll btn smooth-scroll" ng-click="gotoplay('fun')">
-                            <strong>¡COMENZAR!</strong>
+                            <strong>¡START!</strong>
                         </a>
                     </div>
                 </div>
@@ -104,15 +105,15 @@
                     <div class="service-icon extremo">
                         <div class="front-content">
                             <i class="flaticon-teamwork" aria-hidden="true"></i>
-                            <h2 class="subtitle">EXTREMO</h2>
+                            <h2 class="subtitle">EXTREME</h2>
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3>+16 años</h3>
-                        <p>¿Te arriesgas?.</p>
+                        <h3>+16 years</h3>
+                        <p>You risk?.</p>
                         <br/>
                         <a class="btn btn-extreme btn-block smooth-scroll" ng-click="gotoplay('extreme')">
-                            <strong>¡COMENZAR!</strong>
+                            <strong>¡START!</strong>
                         </a>
                     </div>
                 </div>
@@ -122,15 +123,15 @@
                     <div class="service-icon erotico">
                         <div class="front-content">
                             <i class="flaticon-teamwork" aria-hidden="true"></i>
-                            <h2 class="subtitle">ÍNTIMO</h2>
+                            <h2 class="subtitle">INTIMATE</h2>
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3>+18 años</h3>
-                        <p>Perfecto para jugar en pareja, o bueno.... para conseguirla.</p>
+                        <h3>+18 years</h3>
+                        <p>Perfect to play as a couple, or well... to get it.</p>
                         <br/>
                         <a class="btn btn-erotico btn-block smooth-scroll" ng-click="gotoplay('erotic')">
-                            <strong>¡COMENZAR!</strong>
+                            <strong>¡START!</strong>
                         </a>
                     </div>
                 </div>
@@ -144,11 +145,11 @@
                         </div>
                     </div>
                     <div class="service-content">
-                        <h3><strong>+18 años</strong></h3>
-                        <p>¡TODAS las categorías en este Nivel!</p>
+                        <h3><strong>+18 years</strong></h3>
+                        <p>ALL categories in this Level!</p>
                         <br/>
                         <a class="btn btn-full btn-block smooth-scroll" ng-click="gotoplay('full')" ng-app="">
-                            <strong>¡COMENZAR!</strong>
+                            <strong>¡START!</strong>
                         </a>
                     </div>
                 </div>
@@ -161,10 +162,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="block-heading">
-                    <h2>Acerca de</h2>
+                    <h2>About</h2>
                 </div>
-                <p class="lead">Está aplicación tiene la finalidad de incentivar la recreación entre un grupo de amigos,
-                    forjar y reforzar la amistad. </p>
+                <p class="lead">This application is intended to encourage recreation among a group of friends,
+                    forge and strengthen friendship. </p>
             </div>
         </div>
         <div class="row">
@@ -173,38 +174,38 @@
                     <div class="item">
                         <div class="shadow-effect">
                             <img class="img-circle" src="" alt="">
-                            <p>No hay que ir para atrás ni para darse impulso</p>
+                            <p>You don't have to go back or give yourself momentum</p>
                         </div>
                         <div class="testimonial-name">Lao Tsé</div>
                     </div>
                     <div class="item">
                         <div class="shadow-effect">
-                            <p>No hay caminos para la paz; la paz es el camino</p>
+                            <p>There are no paths to peace; The peace is the way</p>
                         </div>
                         <div class="testimonial-name">Mahatma Gandhi</div>
                     </div>
                     <div class="item">
                         <div class="shadow-effect">
-                            <p>Arrecho nunca muere, y si muere.... ¡Muere ARRECHO!</p>
+                            <p>Arrecho never dies, and if he dies... ARRECHO dies!</p>
                         </div>
                         <div class="testimonial-name">Geovanny Brito Casanova</div>
                     </div>
                     <div class="item">
                         <div class="shadow-effect">
-                            <p>Haz el amor y no la guerra</p>
+                            <p>Make love and not war</p>
                         </div>
                         <div class="testimonial-name">John Lennon</div>
                     </div>
                     <div class="item">
                         <div class="shadow-effect">
-                            <p>Para trabajar basta estar convencido de una cosa: que trabajar es menos aburrido que
-                                divertirse</p>
+                            <p>To work, it is enough to be convinced of one thing: that working is less boring than
+                                have fun</p>
                         </div>
                         <div class="testimonial-name">Amy Tan</div>
                     </div>
                     <div class="item">
                         <div class="shadow-effect">
-                            <p>Lo peor que hacen los malos es obligarnos a dudar de los buenos</p>
+                            <p>LThe worst thing the bad guys do is force us to doubt the good guys.</p>
                         </div>
                         <div class="testimonial-name">Jacinto Benavente</div>
                     </div>
@@ -229,11 +230,10 @@
                                 class="fab fa-linkedin"></i></a>
                     </div>
                     <p class="text-muted text-center mt-3">© 2023 ChallengeHub.</p>
-                    <p class="text-muted text-center mt-3"> Todos los derechos reservados.</p>
-                    <p class="text-muted text-center mt-3">Desarrollado por:</p>
+                    <p class="text-muted text-center mt-3"> All rights reserved.</p>
+                    <p class="text-muted text-center mt-3">Developed by:</p>
                     <p class="text-muted text-center mt-3">
                         Ing. Brito Casanova Geovanny.</p>
-
                 </div>
             </footer>
         </div>
@@ -244,6 +244,6 @@
 <script src="js/propios/util.js" type="text/javascript"></script>
 <script src="js/propios/languages.js" type="text/javascript"></script>
 <script src="js/angular/app.js" type="text/javascript"></script>
-<script src="js/angular/InicioController.js" type="text/javascript"></script>
+<script src="js/angular/HomeController.js" type="text/javascript"></script>
 </body>
 </html>

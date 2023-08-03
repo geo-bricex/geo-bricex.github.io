@@ -1,0 +1,35 @@
+
+.language-selector {
+    background-color: transparent;
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.language-selector label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Añade negrita al texto */
+    color: white; /* Color blanco del texto */
+}
+
+.language-selector select {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos adicionales para hacer el menú desplegable responsivo */
+@media (max-width: 600px) {
+    .language-selector {
+        font-size: 14px;
+    }
+    .language-selector select {
+        font-size: 14px;
+    }
+}
