@@ -113,7 +113,7 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
     $scope.startGameAll = () => {
         let startGameData = {//mejorar para que no haga otra petición
             "category": paramUrl,
-            "mode": "All",
+            "mode": "all",
             "level": "1",
             "lang": "en",//head
         };
