@@ -126,6 +126,7 @@ app.controller('controllerPlayer', function ($scope, $http) {// controller del i
             contentType: "application/json; charset=utf-8",
             url: urlWebServicies + '/selectchallenge_en',
             data: JSON.stringify({...api_param}),
+            headers: {"lang": "es"},
             beforeSend: (xhr) => {
                 document.querySelector('#lblChallenge').innerText = "";
             },
